@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.0/dist/full.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: 'Gowun Batang', serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- Navbar -->
+    <nav class="navbar bg-white px-6 py-4 shadow-md">
+      <div class="flex-1">
+        <a class="btn btn-ghost normal-case text-xl text-gray-800">News</a>
+      </div>
+      <div class="flex-none">
+        <button class="btn btn-square btn-ghost text-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6h18M3 12h18m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero h-80 bg-cover bg-center" style="background-image: url('https://r4.wallpaperflare.com/wallpaper/384/818/513/himalayas-mountains-landscape-nature-wallpaper-6826fde8a0307cb8800cf11ed822d47a.jpg');">
+      <div class="hero-overlay bg-opacity-50"></div>
+      <div class="hero-content text-center text-white">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl font-bold">Discover Stunning Destinations</h1>
+          <p class="mb-5">Explore the world and experience beautiful landscapes like never before.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Topics -->
+    <section class="my-12 px-6">
+      <h2 class="text-2xl font-bold mb-4 text-gray-800">Popular Topics</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div class="card bg-white shadow-xl rounded-md">
+          <figure class="h-48">
+            <img class="w-full h-full object-cover" src="https://c4.wallpaperflare.com/wallpaper/161/296/845/nature-sea-water-turquoise-wallpaper-preview.jpg" alt="Travel" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title text-gray-800">Travel</h2>
+            <p>Discover the beauty of the world.</p>
+          </div>
+        </div>
+        <div class="card bg-white shadow-xl rounded-md">
+          <figure class="h-48">
+            <img class="w-full h-full object-cover" src="https://c4.wallpaperflare.com/wallpaper/311/91/699/memes-food-hd-wallpaper-preview.jpg" alt="Food" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title text-gray-800">Food</h2>
+            <p>Explore delicious cuisines.</p>
+          </div>
+        </div>
+        <div class="card bg-white shadow-xl rounded-md">
+          <figure class="h-48">
+            <img class="w-full h-full object-cover" src="https://c4.wallpaperflare.com/wallpaper/176/475/818/cristiano-madrid-portugal-real-wallpaper-preview.jpg" alt="Sports" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title text-gray-800">Sports</h2>
+            <p>Get the latest sports updates.</p>
+          </div>
+        </div>
+        <div class="card bg-white shadow-xl rounded-md">
+          <figure class="h-48">
+            <img class="w-full h-full object-cover" src="https://c4.wallpaperflare.com/wallpaper/362/276/920/nature-4k-pc-full-hd-wallpaper-preview.jpg" alt="Nature" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title text-gray-800">Nature</h2>
+            <p>Reconnect with the great outdoors.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Section Before Footer -->
+    <section>
+      <div class="hero h-96 bg-cover bg-center mb-10" style="background-image: url('https://r4.wallpaperflare.com/wallpaper/816/62/518/digital-art-nature-trees-mountains-wallpaper-e29182d0bdb66eab5a6872052028d9b2.jpg');">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-white">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold">Richard Norton photorealistic rendering as real photos</h1>
+            <p class="mb-5">Progressively enhance interactive methodologies.</p>
+            <a href="detail.html">
+              <button class="btn btn-primary">Read More</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Editor's Pick Section -->
+    <section class="my-12 px-6">
+      <h2 class="text-2xl font-bold mb-4 text-gray-800">Editor's Pick</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="card bg-white shadow-xl rounded-md">
+          <figure class="h-48">
+            <img class="w-full h-full object-cover" src="https://c4.wallpaperflare.com/wallpaper/615/107/638/beach-sandy-beach-lagoon-tropical-landscape-wallpaper-preview.jpg" alt="Editor's pick 1" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title text-gray-800">Top Beach Destinations</h2>
+            <p>Find your perfect beach getaway.</p>
+          </div>
+        </div>
+        <div class="card bg-white shadow-xl rounded-md">
+          <figure class="h-48">
+            <img class="w-full h-full object-cover" src="https://r4.wallpaperflare.com/wallpaper/952/824/961/makoto-shinkai-kimi-no-na-wa-wallpaper-78d65dc8d060ccb8d07cd1cec8a2e4aa.jpg" alt="Editor's pick 2" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title text-gray-800">City Escapes</h2>
+            <p>Discover vibrant urban experiences.</p>
+          </div>
+        </div>
+        <div class="card bg-white shadow-xl rounded-md">
+          <figure class="h-48">
+            <img class="w-full h-full object-cover" src="https://r4.wallpaperflare.com/wallpaper/649/484/984/photography-landscape-nature-mountains-wallpaper-c79d8611d8f43eda8fb79ffde6c12106.jpg" alt="Editor's pick 3" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title text-gray-800">Mountain Adventures</h2>
+            <p>Explore the world's highest peaks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer p-10 bg-gray-800 text-white">
+      <div>
+        <span class="footer-title">Company</span>
+        <a class="link link-hover text-white">About us</a>
+        <a class="link link-hover text-white">Contact</a>
+        <a class="link link-hover text-white">Jobs</a>
+        <a class="link link-hover text-white">Press kit</a>
+      </div>
+      <div>
+        <span class="footer-title">Legal</span>
+        <a class="link link-hover text-white">Terms of use</a>
+        <a class="link link-hover text-white">Privacy policy</a>
+        <a class="link link-hover text-white">Cookie policy</a>
+      </div>
+      <div>
+        <span class="footer-title">Social</span>
+        <a class="link link-hover text-white">Twitter</a>
+        <a class="link link-hover text-white">Instagram</a>
+        <a class="link link-hover text-white">Facebook</a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <div class="flex h-screen">
+      <!-- Sidebar -->
+      <aside class="w-1/5 bg-white shadow-lg p-6">
+        <div class="mb-8">
+          <h1 class="text-2xl font-bold">Admin Panel</h1>
+        </div>
+        <ul class="space-y-4">
+          <li><a href="/template/admin.html" class="text-blue-500 font-medium">Posts</a></li>
+          <li><a href="/template/categories.html" class="text-gray-600 hover:text-blue-500">Categories</a></li>
+          <li><a href="/template/addUser.html" class="text-gray-600 hover:text-blue-500">Add User</a></li>
+          <li>
+            <a href="/template/login.html" class="text-gray-600 font-bold hover:text-blue-500"><span>Logout</span></a>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Main Content Area -->
+      <div class="flex-1 flex flex-col">
+        <!-- Top Bar -->
+        <header class="bg-white shadow-lg p-4 flex justify-between items-center">
+          <div>
+            <h2 class="text-xl font-semibold">Dashboard</h2>
+          </div>
+          <div class="flex items-center space-x-4">
+            <h1>Hi, admin</h1>
+            <div class="w-10 h-10 rounded-full bg-gray-300"></div>
+          </div>
+        </header>
+
+        <!-- Dashboard Widgets -->
+        <main class="p-6 grid grid-cols-1 lg:grid-cols-1 gap-6">
+          <!-- Posts -->
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <div class="flex justify-between items-center mb-4">
+              <h2 class="text-lg font-semibold">Posts</h2>
+              <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"><a href="/template/addPost.html">Add Post</a></button>
+            </div>
+
+            <div class="overflow-x-auto">
+              <table class="min-w-full table-auto border-collapse">
+                <thead>
+                  <tr class="bg-gray-100 text-left">
+                    <th class="px-4 py-2 border">No</th>
+                    <th class="px-4 py-2 border">Title</th>
+                    <th class="px-4 py-2 border">Image</th>
+                    <th class="px-4 py-2 border">Content</th>
+                    <th class="px-4 py-2 border">Category</th>
+                    <th class="px-4 py-2 border">Author</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="px-4 py-2 border">1</td>
+                    <td class="px-4 py-2 border">First Title</td>
+                    <td class="px-4 py-2 border">
+                      <img src="https://via.placeholder.com/100" alt="Sample Image" class="w-16 h-16 object-cover" />
+                    </td>
+                    <td class="px-4 py-2 border">This is a sample description of the content.</td>
+                    <td class="px-4 py-2 border">Web Development</td>
+                    <td class="px-4 py-2 border">John Doe</td>
+                  </tr>
+                  <tr>
+                    <td class="px-4 py-2 border">2</td>
+                    <td class="px-4 py-2 border">Second Title</td>
+                    <td class="px-4 py-2 border">
+                      <img src="https://via.placeholder.com/100" alt="Sample Image" class="w-16 h-16 object-cover" />
+                    </td>
+                    <td class="px-4 py-2 border">This is another sample description for the second item.</td>
+                    <td class="px-4 py-2 border">Dev Tools</td>
+                    <td class="px-4 py-2 border">Jane Smith</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Optional: Chart.js for Charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      // Example for creating charts, you can replace with your own data
+      const ctxEmployees = document.getElementById('chartEmployees').getContext('2d');
+      const ctxProjects = document.getElementById('chartProjects').getContext('2d');
+
+      new Chart(ctxEmployees, {
+        type: 'line',
+        data: {
+          labels: ['2016', '2017', '2018', '2019'],
+          datasets: [{
+            label: 'Paris',
+            data: [100, 200, 300, 400],
+            borderColor: 'rgb(75, 192, 192)',
+          }]
+        }
+      });
+
+      new Chart(ctxProjects, {
+        type: 'doughnut',
+        data: {
+          labels: ['KFC', 'LLM', 'American Express', 'Gartner'],
+          datasets: [{
+            data: [300, 50, 100, 150],
+            backgroundColor: ['red', 'blue', 'green', 'yellow'],
+          }]
+        }
+      });
+    </script>
+  </body>
+</html>

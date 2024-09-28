@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <div class="flex h-screen">
+      <!-- Sidebar -->
+      <aside class="w-1/5 bg-white shadow-lg p-6">
+        <div class="mb-8">
+          <h1 class="text-2xl font-bold">Admin Panel</h1>
+        </div>
+        <ul class="space-y-4">
+          <li><a href="/template/admin.html" class="text-gray-600 hover:text-blue-500 ">Posts</a></li>
+          <li><a href="/template/categories.html" class="text-gray-600 hover:text-blue-500">Categories</a></li>
+          <li><a href="/template/addUser.html" class="text-blue-500 font-medium">Add User</a></li>
+          <li>
+            <a href="/template/login.html" class="text-gray-600 font-bold hover:text-blue-500"><span>Logout</span></a>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Main Content Area -->
+      <div class="flex-1 flex flex-col">
+        <!-- Top Bar -->
+        <header class="bg-white shadow-lg p-4 flex justify-between items-center">
+          <div>
+            <h2 class="text-xl font-semibold">Dashboard</h2>
+          </div>
+          <div class="flex items-center space-x-4">
+            <h1>Hi, admin</h1>
+            <div class="w-10 h-10 rounded-full bg-gray-300"></div>
+          </div>
+        </header>
+
+        <!-- Dashboard Widgets -->
+        <main class="p-6 grid grid-cols-1 lg:grid-cols-1 gap-6">
+          <!-- Posts -->
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <h2 class="text-lg font-semibold mb-4">Add User</h2>
+            <div class="overflow-x-auto">
+                <form action="#" method="POST" class="space-y-4">
+    <!-- Username -->
+    <div>
+      <label class="block text-gray-700 font-medium mb-1" for="username">Username <span class="text-red-500">*</span></label>
+      <input type="text" id="username" name="username" placeholder="Enter username ..." required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500 focus:border-blue-500">
+    </div>
+
+    <!-- Email -->
+    <div>
+      <label class="block text-gray-700 font-medium mb-1" for="email">Email <span class="text-red-500">*</span></label>
+      <input type="email" id="email" name="email" placeholder="Enter email address ..." required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500 focus:border-blue-500">
+    </div>
+
+    <!-- Password -->
+    <div>
+      <label class="block text-gray-700 font-medium mb-1" for="password">Password <span class="text-red-500">*</span></label>
+      <input type="password" id="password" name="password" placeholder="Enter password ..." required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500 focus:border-blue-500">
+    </div>
+
+    <!-- Phone Number -->
+    <div>
+      <label class="block text-gray-700 font-medium mb-1" for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter phone number (optional) ..." class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500 focus:border-blue-500">
+    </div>
+
+    <!-- Address -->
+    <div>
+      <label class="block text-gray-700 font-medium mb-1" for="address">Address</label>
+      <textarea id="address" name="address" rows="3" placeholder="Enter address (optional) ..." class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500 focus:border-blue-500"></textarea>
+    </div>
+
+    <!-- Submit Button -->
+    <div>
+      <button type="submit" class="w-full bg-blue-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-500">Sign Up</button>
+    </div>
+  </form>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    </script>
+  </body>
+</html>
